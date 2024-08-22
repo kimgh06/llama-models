@@ -11,8 +11,6 @@
 from pathlib import Path
 from typing import Optional
 
-import fire
-
 from models.llama3.api.datatypes import (
     CompletionMessage,
     StopReason,
@@ -22,6 +20,7 @@ from models.llama3.api.datatypes import (
 
 from models.llama3.reference_impl.generation import Llama
 
+import fire
 
 THIS_DIR = Path(__file__).parent.resolve()
 
