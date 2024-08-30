@@ -27,5 +27,6 @@ messages = [
 outputs = pipeline(
     messages,
     max_new_tokens=256,
+    batch_size=1,
 )
 print(outputs[0]["generated_text"][-1])
